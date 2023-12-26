@@ -1,0 +1,8 @@
+proj5.x: myspell.o
+	g++ -std=c++11 myspell.o -o proj5.x
+myspell.o: myspell.cpp
+	g++ -std=c++11 -c myspell.cpp
+clean:
+	rm *.o proj5.x
+
+
